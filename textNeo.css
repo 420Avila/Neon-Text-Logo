@@ -1,0 +1,72 @@
+.container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.neon {
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Nabla', cursive;
+    font-family: 'Neonderthaw', cursive;
+    color: #FB4264;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #F40A35;
+}
+
+.flux {
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Nabla', cursive;
+    font-family: 'Neonderthaw', cursive;
+    color: #FB4264;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation:  neon 1s ease infinite;
+}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+        color: #FED128;
+    }
+
+    50% {
+        text-shadow: 0 0 .5vw #f10800, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b, 0 0 5vw #800e0b, 0 0 .2vw #800e0b, .5vw .5vw .1vw #40340a;
+        color: #806914;
+    }
+}
+
+.flux {
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+        color: #28D7Fe;
+    }
+    
+    50% {
+        text-shadow: 0 0 .5vw #082108, 0 0 1.5vw #082108, 0 0 5vw #082108, 0 0 5vw #082108, 0 0 .2vw #082108, .5vw .5vw .1vw #0A3940;
+        color: #146c80;
+    }
+}    
